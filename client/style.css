@@ -24,7 +24,8 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   width: 100%;
 }
 
@@ -34,7 +35,7 @@ textarea {
   padding: 12px 20px;
   border-radius: 20px;
   border: none;
-  width: 60%;
+  width: 80%;
   margin-right: 10px;
   background-color: #505050;
   color: white;
@@ -48,6 +49,8 @@ button {
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  width: 20%;
+  height: 100%;
 }
 
 /* Change button color on hover */
@@ -56,12 +59,3 @@ button:hover {
 }
 
 /* Style for messages sent by the bot */
-.bot-message {
-  background-color: #e0e0e0;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 20px;
-  font-size: 1.2em;
-  width: 100%;
-  text-align:left;
-}

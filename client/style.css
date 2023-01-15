@@ -1,20 +1,20 @@
-/* Define font and background color */
+/* Define a modern font and background color */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
 }
 
-/* Center the chat container and set a background color */
+/* Center the chat container and give it a box-shadow and gradient background */
 #chat_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   height: 80%;
   width: 80%;
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
 }
 
 /* Style the form */
@@ -33,6 +33,7 @@ textarea {
   border: none;
   width: 60%;
   margin-right: 10px;
+  background-color: white;
 }
 
 /* Style the submit button */
@@ -48,4 +49,26 @@ button {
 /* Change button color on hover */
 button:hover {
   background-color: #3e8e41;
+}
+
+/* Style for messages sent by the bot */
+.bot-message {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* Anchor form to the bottom */
+form {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Clear the AI response container */
+.ai-response {
+  clear: both;
 }

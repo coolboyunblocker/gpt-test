@@ -135,6 +135,54 @@ button {
   height: 100%;
 }
 
+.message {
+  flex: 1;
+  color: #dcdcdc;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background: #2b2b2b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  white-space: pre-wrap; 
+}
+
+form {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #1f1f1f;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+textarea {
+  width: 80%;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  width: 20%;
+  height: 100%;
+}
+
 form img {
   width: 30px;
   height: 30px;

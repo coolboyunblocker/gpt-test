@@ -1,61 +1,140 @@
-/* Define a modern font and background color */
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #303030;
-  color: white;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Center the chat container and give it a box-shadow */
-#chat_container {
+body {
+  background: #1b1b1b;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background: #1b1b1b;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 80%;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #404040;
+  justify-content: space-between;
 }
 
-/* Style the form */
-form {
+#chat_container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+/* hides scrollbar */
+#chat_container::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 15px;
+}
+
+.ai {
+  background: #1f1f1f;
+}
+
+.chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  background: #5436DA;
+
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.ai .profile {
+  background: #10a37f;
+}
+
+.profile img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.message {
+  flex: 1;
+  color: #dcdcdc;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background: #2b2b2b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  white-space: pre-wrap; 
+}
+
+form {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #1f1f1f;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 0;
-  width: 100%;
 }
 
-/* Style the textarea */
 textarea {
+  width: 80%;
+  color: #fff;
   font-size: 18px;
-  padding: 12px 20px;
+  padding: 10px;
+  background: transparent;
   border-radius: 20px;
   border: none;
-  width: 80%;
-  margin-right: 10px;
-  background-color: #505050;
-  color: white;
+  outline: none;
+  resize: none;
 }
 
-/* Style the submit button */
 button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 20px;
-  border: none;
+  outline: 0;
+  border: 0;
   cursor: pointer;
+  background: transparent;
   width: 20%;
   height: 100%;
 }
 
-/* Change button color on hover */
-button:hover {
-  background-color: #3e8e41;
+form img {
+  width: 30px;
+  height: 30px;
 }
-
-/* Style for messages sent by the bot */

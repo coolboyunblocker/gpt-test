@@ -1,11 +1,11 @@
 /* Define a modern font and background color */
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f5f5f5;
-  position: relative;
+  background-color: #303030;
+  color: white;
 }
 
-/* Center the chat container and give it a box-shadow and gradient background */
+/* Center the chat container and give it a box-shadow */
 #chat_container {
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+  background-color: #404040;
 }
 
 /* Style the form */
@@ -23,9 +23,9 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
+  position: relative;
   width: 100%;
+  margin-top: 20px;
 }
 
 /* Style the textarea */
@@ -36,7 +36,8 @@ textarea {
   border: none;
   width: 60%;
   margin-right: 10px;
-  background-color: white;
+  background-color: #505050;
+  color: white;
 }
 
 /* Style the submit button */
@@ -59,9 +60,7 @@ button:hover {
   background-color: #e0e0e0;
   border-radius: 10px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
   font-size: 1.2em;
-  position: absolute;
-  bottom: 45px;
   width: 100%;
 }

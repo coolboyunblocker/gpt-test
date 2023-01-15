@@ -2,6 +2,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f5f5f5;
+  position: relative;
 }
 
 /* Center the chat container and give it a box-shadow and gradient background */
@@ -22,7 +23,9 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Style the textarea */
@@ -58,17 +61,7 @@ button:hover {
   padding: 10px;
   margin-bottom: 10px;
   font-size: 1.2em;
-}
-
-/* Anchor form to the bottom */
-form {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: 45px;
   width: 100%;
-  margin-bottom: 10px;
-}
-
-/* Clear the AI response container */
-.ai-response {
-  clear: both;
 }
